@@ -1,3 +1,3 @@
 # Project-Hacktoberfest-MK
 
-Do The Best
+Do the best
