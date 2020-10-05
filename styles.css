@@ -1,0 +1,135 @@
+body {
+    font: 1em/1.875em sans-serif;
+    text-align: center; 
+    background: #ededed;
+    color: #000000c2;
+    margin: 0;
+}
+
+h1 {
+    font-size: 4.236em; 
+    line-height: 3.438em;
+    background-color: darkgray;
+}
+h2 {
+    font-size: 2.618em; 
+    line-height: 2.813em;
+    }
+h3 {
+    font-size: 1.618em; 
+    line-height: 2.250em;
+}
+
+button { padding: 10px; }
+#submit { padding: 5px; }
+
+nav#nav-bar { 
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: whitesmoke;
+}
+
+/* "clean" list */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* horizontal nav bar */
+li { 
+    display: inline; 
+    text-transform: uppercase;
+    padding: 30px;
+}
+
+/*undecorated li*/
+li a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img.responsive {
+  max-width: 100%;
+  height: auto;
+}
+
+#header-img { margin-right: 45px; }
+#form { padding: 1.875em 0; }
+
+main { padding: 0 15px; }
+
+section {
+    padding: 6.854em 0;
+    max-width: 960px; 
+    margin: auto;
+}
+
+section#hero {
+    margin-top: 6.854em;
+    padding: 6.854em 0;
+    }
+
+section#hero p {
+    font-size: 1.618em; 
+    font-style: italic; 
+}
+
+section#features { 
+    display: flex; 
+    justify-content: space-evenly; 
+    align-items: flex-end;
+}
+section#features h3 { line-height: 1.25em; }
+section#features article { 
+    max-width: 300px; 
+    padding: 0 15px; 
+}
+
+article { margin: 15px auto;}
+
+.embed { 
+    position: relative; 
+    padding-bottom: 56.25%; 
+    height: 0; 
+    overflow: hidden; 
+    max-width: 100%; 
+} 
+.embed iframe, .embed object, .embed embed { 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%; 
+}
+
+section#pricing { display: flex; }
+section#pricing article { border: 1px solid black; padding-bottom: 15px; }
+section#pricing h3:nth-child(1) { 
+    background: gainsboro; 
+    margin-top: 0;
+    padding: 15px; 
+}
+
+footer { 
+    margin-top: 6.854em; 
+    font-size: small; 
+    padding: 6.854em; 
+    background: gainsboro;
+}
+
+@media screen and (max-width: 639px) {
+
+    /* adapt flex to small screen */
+    section#features { flex-direction: column; align-items: center; }
+    
+    /* in order to make "flex" responsive, you can just make it "block" */
+    section { display: block !important; }
+    
+    /* mobile horizontal nav bar */
+    li { display: block; padding: 5px; }
+    
+    #submit { display: block; margin: 5px auto; }    
+    
+}
